@@ -15,7 +15,7 @@ body {
 
 h1,
 h2,
-h3,
+aside,
 h4,
 h5,
 h6 {
@@ -57,7 +57,15 @@ hr {
 	margin: 0 0 1.6rem;
 }
 
-.container {
+.container1 {
+	padding: 0;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1000px;
+}
+.container2 {
+	display:flex;
+	flex-direction: row;
 	padding: 0;
 	margin: 0 auto;
 	width: 100%;
@@ -84,7 +92,7 @@ hr {
 }
 
 .header_pub-info {
-	margin: 0 0 1.6rem;
+	margin: 0 1.6rem 1.6rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -96,7 +104,7 @@ hr {
 	background-color: #e2e2e2;
 	padding: 1.6rem;
 	width: 100%;
-	margin: 0 0 1.6rem;
+	margin: 0 1.6rem 1.6rem;
 }
 
 .main-article_cover {
@@ -104,7 +112,7 @@ hr {
 }
 
 .main-article_cover .caption {
-	color: #666666;
+	color: #767474;
 	font-size: 0.8rem;
 	font-style: italic;
 	line-height: 1;
