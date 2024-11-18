@@ -6,7 +6,7 @@ html {
 }
 
 body {
-	color: #333333;
+	color: #0a0909;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 16px;
 	line-height: 1.6;
@@ -33,7 +33,7 @@ p {
 }
 
 a {
-	color: #0056b3;
+	color: #0e0e0f;
 	border-bottom: 2px solid transparent;
 	transition: all 0.5s ease-in-out;
 }
@@ -57,12 +57,12 @@ hr {
 	margin: 0 0 1.6rem;
 }
 
-.container {
-	padding: 0;
-	margin: 0 auto;
+.header-container {
+	padding: 5%;
+	margin:0 auto;
 	width: 100%;
 	max-width: 1000px;
-}
+	}
 
 .header {
 	background-color: #64bcda;
@@ -74,6 +74,7 @@ hr {
 	padding: 1.6rem;
 	width: 100%;
 	display: flex;
+	flex-direction: row;
 	align-items: center;
 	justify-content: center;
 }
@@ -83,20 +84,26 @@ hr {
 	max-width: 420px;
 }
 
-.header_pub-info {
-	margin: 0 0 1.6rem;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	text-transform: uppercase;
+.header_pub-info {		
+		margin: 0 0 1.6re;
+		display: flex;
+		flex-direction:  row;
+		justify-content: flex-start;
+		align-items: center;
+		text-transform: uppercase;
 }
-
+.main-container {
+	padding: 5%;
+	margin:0 auto;
+	width: 100%;
+	max-width: 1000px;
+	}
 .main-article {
-	background-color: #e2e2e2;
+	background-color: #c4bfbf;
 	padding: 1.6rem;
 	width: 100%;
 	margin: 0 0 1.6rem;
+	border-radius: 0.6rem;
 }
 
 .main-article_cover {
@@ -125,6 +132,7 @@ hr {
 	color: #f2f2f2;
 	margin: 0 0 1.6rem;
 	font-size: 0.9rem;
+	border-radius: 0.6rem;
 }
 
 .main-sidebar_thumb {
@@ -165,20 +173,42 @@ hr {
 
 @media (min-width: 800px) {
 	.header_pub-info {
+		margin: 0 0 1.6rem;
+		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
+		width: 100%;
+		text-transform: uppercase;
 	}
-
+	.header-container {
+		display: flex;
+		flex-direction: column;
+		padding: 5%;
+		margin:0 auto;
+		width: 100%;
+		max-width: 1000px;
+	}
+	
+	.main-container {
+		display: flex;
+		margin:0 auto;
+		width: 90vw;
+		gap: 1.6rem;
+		/* max-width: 1000px; */
+	}
 	.main-article {
-		width: 60%;
+		/* width: 60%; */
+		flex-basis: calc(60% - 0.8rem);
 		border-radius: 0.6rem;
 		margin: 0;
 	}
 
 	.main-sidebar {
-		width: 40%;
+		/* width: 40%; */
+		flex-basis: calc(40% - 0.8rem);
 		border-radius: 0.6rem;
 		margin: 0;
 	}
+	
 }
