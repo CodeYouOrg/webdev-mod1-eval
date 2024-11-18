@@ -43,6 +43,7 @@ a:hover {
 	border-bottom: 2px solid #002348;
 }
 
+
 hr {
 	margin: 3.2rem 1.6rem;
 	color: #555555;
@@ -90,6 +91,16 @@ hr {
 	justify-content: center;
 	align-items: center;
 	text-transform: uppercase;
+}
+
+.main-article_content   {
+	display: grid;
+	max-width: 900;
+	min-width: 800;
+	padding: 20px;
+    grid-gap:20px;
+
+
 }
 
 .main-article {
