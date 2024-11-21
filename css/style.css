@@ -185,7 +185,6 @@ hr {
 
 	.container {
 		display: grid;
-		grid-template-columns: 2fr fr;
 		padding: 0;
 		margin: 0 auto;
 		width: 100%;
